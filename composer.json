@@ -1,0 +1,65 @@
+{
+    "name": "rep98/laravel-venezuela",
+    "description": "Modelo de datos Geográficos de Venezuela",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "rep98",
+        "laravel",
+        "venezuela",
+        "geografía",
+        "distribución",
+        "vzla",
+        "estados",
+        "states",
+        "municipalities",
+        "municipios",
+        "parroquias",
+        "parishes",
+        "comunidades",
+        "communities"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rep98\\Venezuela\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rep98\\Venezuela\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert Pérez",
+            "email": "delfinmundo@gmail.com",
+            "homepage": "https://rep98.vzlaweb.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/REP98/laravel-venezuela",
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^9.4|^10.1|^11.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rep98\\Venezuela\\DPTServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
