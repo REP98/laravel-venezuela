@@ -1,7 +1,7 @@
 {
     "name": "rep98/laravel-venezuela",
     "description": "Modelo de datos Geográficos de Venezuela",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "type": "library",
     "license": "MIT",
     "keywords": [

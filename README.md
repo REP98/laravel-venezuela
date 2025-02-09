@@ -8,8 +8,15 @@ Datos Geográficos de Venezuela para Laravel
 
 ```shell
 $ composer require rep98/laravel-venezuela
-$ php artisan vendor:publish --tag=venezuela-dpt-config
-$ php artusan vendor:publish --tag=venezuela-migrations
+$ php artisan venezuela:install
+```
+
+Con esto instalamos e iniciamos la carga y publicación de archivos, si debesea una instalación manual puede usar:
+
+```shell
+$ php artisan vendor:publish --tag=venezuela-config
+$ php artisan vendor:publish --tag=venezuela-migrations
+$ php artisan vendor:publish --tag=venezuela-seeders
 ```
 
 ## Información
