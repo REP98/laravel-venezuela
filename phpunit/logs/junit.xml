@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/mnt/vampire/Server/www/rep98/laravel-venezuela/phpunit.xml" tests="14" assertions="26" errors="0" failures="0" skipped="0" time="0.739903">
+    <testsuite name="Unit" tests="8" assertions="12" errors="0" failures="0" skipped="0" time="0.472366">
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\CityTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/CityTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.155042">
+        <testcase name="it_can_create_a_state" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/CityTest.php" line="11" class="Rep98\Venezuela\Tests\Unit\Models\CityTest" classname="Rep98.Venezuela.Tests.Unit.Models.CityTest" assertions="1" time="0.155042"/>
+      </testsuite>
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\CommunityTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/CommunityTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.039710">
+        <testcase name="it_can_create_a_state" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/CommunityTest.php" line="12" class="Rep98\Venezuela\Tests\Unit\Models\CommunityTest" classname="Rep98.Venezuela.Tests.Unit.Models.CommunityTest" assertions="1" time="0.039710"/>
+      </testsuite>
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\DirectionTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/DirectionTest.php" tests="3" assertions="7" errors="0" failures="0" skipped="0" time="0.157775">
+        <testcase name="it_can_register_a_new_direction" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/DirectionTest.php" line="17" class="Rep98\Venezuela\Tests\Unit\Models\DirectionTest" classname="Rep98.Venezuela.Tests.Unit.Models.DirectionTest" assertions="5" time="0.047460"/>
+        <testcase name="it_can_list_directions" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/DirectionTest.php" line="30" class="Rep98\Venezuela\Tests\Unit\Models\DirectionTest" classname="Rep98.Venezuela.Tests.Unit.Models.DirectionTest" assertions="1" time="0.054886"/>
+        <testcase name="it_can_search_directions" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/DirectionTest.php" line="42" class="Rep98\Venezuela\Tests\Unit\Models\DirectionTest" classname="Rep98.Venezuela.Tests.Unit.Models.DirectionTest" assertions="1" time="0.055429"/>
+      </testsuite>
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\MunicipalityTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/MunicipalityTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.039492">
+        <testcase name="it_can_create_a_state" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/MunicipalityTest.php" line="12" class="Rep98\Venezuela\Tests\Unit\Models\MunicipalityTest" classname="Rep98.Venezuela.Tests.Unit.Models.MunicipalityTest" assertions="1" time="0.039492"/>
+      </testsuite>
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\ParishTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/ParishTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.039818">
+        <testcase name="it_can_create_a_state" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/ParishTest.php" line="12" class="Rep98\Venezuela\Tests\Unit\Models\ParishTest" classname="Rep98.Venezuela.Tests.Unit.Models.ParishTest" assertions="1" time="0.039818"/>
+      </testsuite>
+      <testsuite name="Rep98\Venezuela\Tests\Unit\Models\StateTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/StateTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.040529">
+        <testcase name="it_can_create_a_state" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Unit/Models/StateTest.php" line="12" class="Rep98\Venezuela\Tests\Unit\Models\StateTest" classname="Rep98.Venezuela.Tests.Unit.Models.StateTest" assertions="1" time="0.040529"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="6" assertions="14" errors="0" failures="0" skipped="0" time="0.267538">
+      <testsuite name="Rep98\Venezuela\Tests\Feature\MigrationTest" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" tests="6" assertions="14" errors="0" failures="0" skipped="0" time="0.267538">
+        <testcase name="states_table_is_created_with_correct_columns" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="17" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="2" time="0.046156"/>
+        <testcase name="municipalities_table_is_created_with_correct_columns" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="29" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="2" time="0.043672"/>
+        <testcase name="parishes_table_is_created_with_correct_columns" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="41" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="2" time="0.043767"/>
+        <testcase name="cities_table_is_created_with_correct_columns" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="53" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="2" time="0.045320"/>
+        <testcase name="communities_table_is_created_with_correct_columns" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="65" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="2" time="0.042032"/>
+        <testcase name="relationships_are_correctly_established" file="/mnt/vampire/Server/www/rep98/laravel-venezuela/tests/Feature/MigrationTest.php" line="77" class="Rep98\Venezuela\Tests\Feature\MigrationTest" classname="Rep98.Venezuela.Tests.Feature.MigrationTest" assertions="4" time="0.046590"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

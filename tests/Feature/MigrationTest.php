@@ -9,10 +9,11 @@ use Rep98\Venezuela\Models\City;
 use Rep98\Venezuela\Models\Community;
 use Rep98\Venezuela\Tests\TestCase;
 use Illuminate\Support\Facades\Schema;
+use PHPUnit\Framework\Attributes\Test;
 
 class MigrationTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function states_table_is_created_with_correct_columns()
     {
         // Verifica que la tabla exista
@@ -24,7 +25,7 @@ class MigrationTest extends TestCase
         ]));
     }
 
-    /** @test */
+    #[Test]
     public function municipalities_table_is_created_with_correct_columns()
     {
         // Verifica que la tabla exista
@@ -36,7 +37,7 @@ class MigrationTest extends TestCase
         ]));
     }
 
-    /** @test */
+    #[Test]
     public function parishes_table_is_created_with_correct_columns()
     {
         // Verifica que la tabla exista
@@ -48,7 +49,7 @@ class MigrationTest extends TestCase
         ]));
     }
 
-    /** @test */
+    #[Test]
     public function cities_table_is_created_with_correct_columns()
     {
         // Verifica que la tabla exista
@@ -60,7 +61,7 @@ class MigrationTest extends TestCase
         ]));
     }
 
-    /** @test */
+    #[Test]
     public function communities_table_is_created_with_correct_columns()
     {
         // Verifica que la tabla exista
@@ -72,7 +73,7 @@ class MigrationTest extends TestCase
         ]));
     }
 
-    /** @test */
+    #[Test]
     public function relationships_are_correctly_established()
     {
         // Crear un estado

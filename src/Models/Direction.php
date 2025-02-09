@@ -27,7 +27,7 @@ class Direction
     {
         // Maneja el registro del estado
         if (is_string($state) && !empty($state)) {
-            $state = State::firstOrCreate(['name' => $state]);
+            $state = State::where(['name' => $state])->first();
         }
 
         if (!($state instanceof State)) {
