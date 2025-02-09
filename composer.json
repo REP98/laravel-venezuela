@@ -1,7 +1,7 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "rep98/laravel-venezuela",
     "description": "Modelo de datos Geográficos de Venezuela",
-    "version": "1.0.3",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -22,12 +22,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Rep98\\Venezuela\\": "src"
+            "Rep98\\Venezuela\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rep98\\Venezuela\\Tests\\": "tests"
+            "Rep98\\Venezuela\\Tests\\": "tests/"
         }
     },
     "authors": [

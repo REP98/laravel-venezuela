@@ -93,3 +93,7 @@ Este paquete también ofrece un modelo genérico para manejar las dirección el 
 + `static function paginate(int $pag = 1, int $perPag = 25, Collection | array $filters = []): LengthAwarePaginator` `=>`  Permite listar todas las comunidades pero de forma Paginada.
 + `static function search(string $condition, ?string $argumentsLike = null): Collection` `=>` Permite realizar búsquedas en la DB, tenga en cuenta que `$argumentsLike` es el formato `LIKE` de búsqueda por defecto buscara en `%condition%` pero si queremos cambiar eso podemos pasarle a `$argumentsLike` algo como esto `-%` donde `-` sera reemplazado por la condición quedando asi `condition%` lo cual buscaría palabras que empiecen en.
 + `static function find(string $type, int $id): Model` `=>` Este método es igual al original de `Eloquent` solo que necesita que se le especifique si `state`, `municipality` entre otros. esto es util cuando tenemos búsquedas dinámicas en nuestro sistema.
+
+## LICENSE
+
+[MIT](./LICENSE)
