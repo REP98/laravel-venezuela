@@ -10,16 +10,16 @@ trait HasState
     /**
      * Obtiene los estados asociados al modelo.
      *
-     * @return MorphToMany|null
+     * @return MorphToMany
      */
-    public function states(): ?MorphToMany
+    public function states(): MorphToMany
     {
-        $table = config('VenezuelaDPT.morphRelationsTable.state');
-
-        if (is_null($table)) {
-            return null;
-        }
-
-        return $this->morphToMany(State::class, 'stateable', $table);
+        return $this->morphToMany(
+            State::class, // Modelo relacionado (State)
+            'modelsable', // Nombre de la relación morfológica (modelsable)
+            'modelsables', // Nombre de la tabla pivote
+            'modelsable_id', // Columna en la tabla pivote que referencia al modelo que usa el trait
+            'internal_model_id' // Columna en la tabla pivote que referencia al modelo interno (State)
+        );
     }
 }

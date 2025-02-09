@@ -10,16 +10,16 @@ trait HasParish
     /**
      * Obtiene las parroquias asociadas al modelo.
      *
-     * @return MorphToMany|null
+     * @return MorphToMany
      */
-    public function parishes(): ?MorphToMany
+    public function parishes(): MorphToMany
     {
-        $table = config('VenezuelaDPT.morphRelationsTable.parish');
-
-        if (is_null($table)) {
-            return null;
-        }
-
-        return $this->morphToMany(Parish::class, 'parishable', $table);
+        return $this->morphToMany(
+            Parish::class, // Modelo relacionado (State)
+            'modelsable', // Nombre de la relación morfológica (modelsable)
+            'modelsables', // Nombre de la tabla pivote
+            'modelsable_id', // Columna en la tabla pivote que referencia al modelo que usa el trait
+            'internal_model_id' // Columna en la tabla pivote que referencia al modelo interno (State)
+        );
     }
 }

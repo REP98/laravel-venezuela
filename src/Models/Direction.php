@@ -208,7 +208,7 @@ class Direction
      *
      * @return  \Illuminate\Database\Eloquent\Model
      */
-    protected static function find(string $type, int $id): Model
+    public static function find(string $type, int $id): Model
     {
         $model = self::getModelInstance($type);
         $relationship = null;

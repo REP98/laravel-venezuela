@@ -20,9 +20,9 @@ class DPTServiceProvider extends ServiceProvider {
         if (! $this->app->runningInConsole()) {
             return;
         }
-        $migratios = $this->getMigrationFileName();
+        $migrations = $this->getMigrationFileName();
         
-        $this->publishes($migratios, 'venezula-migrations');
+        $this->publishes($migrations, 'venezuela-migrations');
 
         // Publica el archivo de configuración
         $this->publishes([

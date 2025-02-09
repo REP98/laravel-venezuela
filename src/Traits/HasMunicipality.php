@@ -10,16 +10,16 @@ trait HasMunicipality
     /**
      * Obtiene los municipios asociados al modelo.
      *
-     * @return MorphToMany|null
+     * @return MorphToMany
      */
-    public function municipalities(): ?MorphToMany
+    public function municipalities(): MorphToMany
     {
-        $table = config('VenezuelaDPT.morphRelationsTable.municipality');
-
-        if (is_null($table)) {
-            return null;
-        }
-
-        return $this->morphToMany(Municipality::class, 'municipalityable', $table);
+        return $this->morphToMany(
+            Municipality::class, // Modelo relacionado (State)
+            'modelsable', // Nombre de la relación morfológica (modelsable)
+            'modelsables', // Nombre de la tabla pivote
+            'modelsable_id', // Columna en la tabla pivote que referencia al modelo que usa el trait
+            'internal_model_id' // Columna en la tabla pivote que referencia al modelo interno (State)
+        );
     }
 }

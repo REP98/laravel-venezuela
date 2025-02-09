@@ -14,17 +14,10 @@ return new class extends Migration
             $table->foreignId('parish_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
-        Schema::create('communityables', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('community_id')->constrained()->onDelete('cascade');
-            $table->morphs('communityable');
-            $table->timestamps();
-        });
     }
 
     public function down()
     {
-        Schema::dropIfExists('communityables');
         Schema::dropIfExists('communities');
     }
 };

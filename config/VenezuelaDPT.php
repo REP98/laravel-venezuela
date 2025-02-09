@@ -2,10 +2,11 @@
 
 return [
     // Morphological Relationships
-    "morphRelationsTable" => [
+    "morphToModel" => [
         "state" => null,
         "municipality" => null,
         'parish' => null,
-        'community' => 'communityables'
+        'community' => null,
+        'city' => null
     ]
 ];
